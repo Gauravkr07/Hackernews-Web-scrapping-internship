@@ -2,6 +2,8 @@
 
 # AIM:
     By using beautifulsoup,crawl and scrap data from "The-Hacker-News" website and store in database.
+    1 . Only first page(in master branch)
+    2 . Enter no. page for scrap(in scraping_no_page branch)
    
 Requirement:
 + Python3
@@ -32,8 +34,13 @@ Requirement:
   # 5. To execute, Open the  pycharm application
      
   +  Run the main.py 
-          (We need uvicorn server to run Fastapi and  need to use localhost ip with portnumber.)
+       - When we have to scrape only first page.
+          
+  +  Run main1.py
+      - When we scrape no. of page in website.
          
+  +  we need uvicorn server to run Fastapi and  need to use localhost ip with portnumber.  
+       
   +  To run this we have two mathod:-
         + 1. configure run by importing module uvicorn)
         + 2. use uvicorn comman (uvicorn main:app --reaload)
